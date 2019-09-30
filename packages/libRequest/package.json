@@ -1,0 +1,31 @@
+{
+  "name": "@hbasic-mfe/lib-request",
+  "version": "1.0.8",
+  "description": "请求库",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "authors": {
+    "name": "liuchao",
+    "email": "liuchao@hua-cloud.com.cn"
+  },
+  "repository": "/@hbasic-mfe/lib-request",
+  "scripts": {
+    "dev": "father build watch",
+    "build": "father build"
+  },
+  "peerDependencies": {
+    "react": "16.9.0"
+  },
+  "publishConfig": {
+    "registry": "http://172.16.18.18:19017/repository/npm-hosted"
+  },
+  "devDependencies": {
+    "father": "^2.18.3"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "antd": "^3.23.3",
+    "store": "^2.0.12",
+    "umi-request": "^1.2.5"
+  }
+}

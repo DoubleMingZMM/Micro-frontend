@@ -1,0 +1,28 @@
+{
+  "name": "@hbasic-mfe/lib-messenger",
+  "version": "0.0.3",
+  "description": "用于 iframe 通信的信使",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "authors": {
+    "name": "liuchao",
+    "email": "liuchao@hua-cloud.com.cn"
+  },
+  "repository": "@hbasic-mfe/lib-messenger",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^3.3.3"
+  },
+  "publishConfig": {
+    "registry": "http://172.16.18.18:19017/repository/npm-hosted"
+  },
+  "dependencies": {
+    "umi": "^2.9.6"
+  }
+}

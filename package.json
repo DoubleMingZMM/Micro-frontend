@@ -1,0 +1,34 @@
+{
+  "name": "hbasic-mfe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@172.16.120.120:hy-department-jc/templates-ui/hbasic-mfe.git",
+  "author": "liuchao <liuchao@hua-cloud.com.cn>",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "lint": "eslint src/**/*.js",
+    "prettier": "prettier --write \"src/**/*.jsx\" \"src/**/*.js\""
+  },
+  "devDependencies": {
+    "lerna": "^3.16.4"
+  },
+  "publishConfig": {
+    "registry": "http://172.16.18.18:19017/repository/npm-hosted"
+  },
+  "lint-staged": {
+    "packages/**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
